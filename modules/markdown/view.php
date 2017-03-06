@@ -17,6 +17,6 @@ include_once(dirname(__FILE__)."/init.php");
 
 $markdown = $clsMarkdown->api_get_markdown($section_id);
 
-echo $clsMarkdown->convert_text($markdown['text'], $markdown['processor']);
+if ($markdown['is_active'] == '1') echo $clsMarkdown->convert_text($markdown['text'], $markdown['processor']);
 
 ?>
