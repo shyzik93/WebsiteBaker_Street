@@ -9,6 +9,8 @@
  *
  */
 
+include(WB_PATH.'/include/shyzik93/sql_tools.php')
+ 
 class Markdown {
 
    function __construct($db, $processor_classes) {
